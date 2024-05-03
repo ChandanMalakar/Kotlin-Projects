@@ -1,5 +1,11 @@
 package com.chandan.coffeemachine
 
+
+fun main(){
+    val coffeeforDenis = CoffeeDetails(0, "Chandan", "XL", 200)
+    makeCoffee(coffeeforDenis)
+}
+
 data class CoffeeDetails
     (
     val sugarCount:Int ,
@@ -8,10 +14,6 @@ data class CoffeeDetails
     val creamAmount : Int
 )
 
-fun main(){
-    val coffeeforDenis = CoffeeDetails(0, "Chandan", "XL", 200)
-    makeCoffee(coffeeforDenis)
-}
 fun askCoffeeDetails()
 {
     println("Who the coffee is for?")
